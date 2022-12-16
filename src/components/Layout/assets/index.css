@@ -1,0 +1,453 @@
+*, body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background-color: #fff;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul>li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+}
+.col-50 {
+    width: 50%;
+}
+.col-67 {
+    width: 66.67%;
+}
+.col-33 {
+    width: 33.33%;
+}
+
+img {
+    width: 100%;
+}
+
+.color-gray {
+    color: #718096;
+}
+
+.content p {
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+.fa-multi {
+    font-size: 28px;
+    line-height: 14px;
+    vertical-align: middle;
+    display: inline-block;
+    padding-bottom: 16px;
+}
+
+.fa-star>img {
+    height:10px;
+    width:10px;
+    display: inline-block;
+    margin-bottom: 2px;
+}
+/******************* header  *************************/
+header{
+    padding: 20px 0;
+    border-bottom: solid 1px #eee;
+}
+header>div{
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo {
+    font-size: 26px;
+    font-weight: bold;
+    padding: 10px;
+}
+header .menu {
+    display: flex;
+    justify-items: baseline;
+}
+header .menu-btn.menu-item {
+    background: transparent;
+    padding-top: 10px;
+    font-weight: bold;
+}
+header .menu>a{
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #555;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+/********************* slide *****************/
+.slide, .banner {
+    padding: 60px 0;
+}
+.slide .col-50, .banner .col-50 {
+    background: #fbfbfb;
+}
+.slide .content, .banner .content {
+    padding: 50px;
+}
+.slide .content h3,.banner .content h3 {
+    font-size: 28px;
+    margin: 5px 0;
+}
+.slide .content .info, .banner .content .info, .news .content .info, .recent .content .info {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/************************************ trend *******************************/
+.trend {
+    padding-top: 100px;
+}
+.trend .title {
+    margin-bottom: 50px;
+}
+.trend .title>span, .news .title>span {
+    border-bottom: solid 1px #333;
+}
+.trend .content h4 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+.trend .basic-item {
+    padding-right: 40px;
+}
+.trend .list ul {
+    margin: 0;
+    margin-right: 40px;
+}
+.trend .list ul>li {
+    display: flex;
+    margin-bottom: 30px;
+}
+.trend .list ul>li.active {
+    background: #fbfbfb;
+}
+.trend .list ul>li>.img {
+    width: 150px;
+}
+.trend .list ul>li .content {
+    padding: 15px;
+}
+.trend .list ul>li .content>h5{
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+.trend .list ul>li .content>.info{
+    font-size: 14px;
+}
+
+.trend .trending>.title {
+    margin-left: 40px;
+}
+.trend .trending>ul {
+    margin-bottom: 50px;
+}
+.trend .trending>ul>li>span.number, .recent .popular>ul>li>span.number{
+    float: left;
+    font-size: 26px;
+    color: #718096;
+}
+.trend .trending>ul>li>.content{
+    margin-left: 45px;
+}
+.trend .trending>ul>li>.content>h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.trend .trending>ul>li .content>.info{
+    font-size: 14px;
+}
+.trend .trending>a.trend-all, .recent .popular>a.trend-all {
+    color: greenyellow;
+    margin-left: 40px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/******************* news *********************/
+.news {
+    overflow-x: hidden;
+    padding: 80px 0;
+}
+.news .title{
+    margin-bottom: 50px;
+}
+.news .row {
+    margin: 0 -20px;
+}
+.news .row>.col-50{
+    padding: 0 20px;
+}
+.news ul, .recent ul {
+    margin-top: 0;
+    padding: 0;
+}
+.news ul>li {
+    display: flex;
+    margin-bottom: 20px;
+}
+.news ul>li>.img {
+    width: 250px;
+}
+.news ul>li>.content {
+    padding: 10px 20px;
+}
+.news ul>li>.content>h5 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/*********************** recent *************************/
+.recent {
+    padding: 80px 0;
+}
+.recent .title {
+    margin-bottom: 60px;
+}
+.recent .title>span {
+    border-bottom: solid 1px #333;
+}
+.recent ul>li {
+    display: flex;
+    margin-bottom: 20px;
+}
+.recent ul>li>.img {
+    width: 300px;
+}
+.recent ul>li .content {
+    padding-right: 20px;
+}
+.recent ul>li .content>h5 {
+    margin: 5px 0 10px 0;
+    font-weight: bold;
+}
+.recent .popular {
+    padding-left: 40px;
+}
+.recent .popular>ul>li>.content{
+    margin-left: 20px;
+}
+.recent .popular>a.trend-all {
+    margin-left: 0;
+}
+
+/**************************** subcribe **********************/
+.subcribe {
+    background: #fbfbfb;
+    padding: 60px 0;
+}
+.subcribe .content {
+    padding-right: 150px;
+}
+.subcribe .form-wrap {
+    position: relative;
+}
+
+.subcribe .form-wrap>form {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: flex;
+    align-items: center;
+}
+.subcribe .form-wrap>form>input {
+    width: 350px;
+    border: 0;
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 40px;
+    box-shadow: 0px 1px 0px 1px #eee;
+    margin-right: 10px;
+}
+.subcribe .form-wrap>form>input:focus-visible, .subcribe .form-wrap>form>input:active {
+    border: 0;
+    outline: none;
+}
+.subcribe .form-wrap>form>button {
+    border: 0;
+    outline: none;
+    background: #000;
+    height: 40px;
+    width: 50px;
+    border-radius: 20px;
+    padding-left: 16px;
+}
+.subcribe .form-wrap>form>button>img {
+    width: 15px;
+    height: 15px;
+    color: #fff;
+}
+
+.subcribe input::placeholder {
+    color: #333 !important;
+}
+
+/******************** footer ***********************/
+footer {
+    padding: 30px 0 50px 0;
+    text-align: center;
+    color: #666;
+}
+
+footer img {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+footer a {
+    color: yellowgreen;
+}
+/******************* category page style ***********************/
+.category {
+    padding-bottom: 50px;
+}
+.category .title {
+    padding: 50px 0;
+}
+.category .title>small{
+    display: block;
+    font-size: 14px;
+    color: #718096;
+}
+.category .title>span{
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: solid 1px #666;
+}
+.category ul{
+    margin-top: 0;
+    padding: 0;
+}
+.category ul>li {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+.category ul>li>.img {
+    width: 250px;
+}
+.category ul>li>.content {
+    padding: 10px 20px 10px 0;
+}
+.category ul>li>.content>h5 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.category .search {
+    padding: 10px 0;
+    border-bottom: solid 2px #f8f8f8;
+    margin-bottom: 20px;
+}
+.category .search>input, .category .search>.category-add-btn {
+    float: right;
+}
+.category .search>input {
+    border: solid 1px #f1f1f1;
+    padding: 5px 10px;
+    margin-right: 10px;
+    width: 250px;
+}
+.category .search>input::placeholder {
+    color: #aaa !important;
+}
+.category .search>.category-add-btn {
+    background: #000;
+    padding: 5px 10px;
+    color: #fff;
+}
+.category .search::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/************ category-add page *************/
+.category-add {
+    padding: 80px 0;
+}
+.category-add form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+.category-add .chakra-form-control {
+    margin-bottom: 15px;
+}
+
+.category-add input::placeholder {
+    color: #aaa !important;
+}
+
+.category-add button[type=submit] {
+    background: #000;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.category img {
+    max-height: 250px;
+}
+.category .content {
+    width: calc(100% - 250px);
+}
+.category .buttons a, .category .buttons button {
+    border: solid 1px #718096;
+    padding: 5px;
+    font-size: 14px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.category .buttons a:hover, .category .buttons button:hover {
+    text-decoration: none;
+    color: #fff;
+    background: #333;
+}
+
+.category .flex {
+    display: inline-block;
+}
+
+.category .chakra-button {
+    margin: 0 3px;
+}
+
+.category .pagination-btns .btn {
+    padding: 5px 10px;
+    margin: 0 2px;
+    border: solid 1px #718096;
+}
+.category .pagination-btns .btn-primary {
+    color: #fff;
+    background: #333;
+}
